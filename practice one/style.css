@@ -1,3 +1,5 @@
+
+
 :root{
     --red: rgb(216, 88, 88);
     --gold: rgb(247, 226, 107);
@@ -365,13 +367,18 @@ header .fa-bars{
     gap: 1.5rem;
  }
 
-    .comments h1{
-        font-size: 30px;
-        text-align: center;
-        padding: 10px;
-        background-color: var(--red);
-        color: #fff;
-    }
+ .comments.heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.comments h1{
+    font-size: 30px;
+    color: #333;
+}
+
+.comments span{
+    color: var(--red);
+}
 
 .comments .box-container .box{
     padding: 3rem 3rem;
@@ -434,10 +441,22 @@ header .fa-bars{
 
     .contact .row{
         display: flex;
-        flex-wrap: wrap-reverse;
-        gap: 1.5rem; 
+        flex-wrap: wrap;
         align-items: center;
        
+    }
+
+    .contact .heading{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contact h1{
+        font-size: 25px;
+        color: #333;
+    }
+
+    .contact span{
+        color: var(--red);
     }
 
     .contact .row form{
@@ -446,25 +465,9 @@ header .fa-bars{
            box-shadow: 0 0.5rem 1.5rem rgb(0, 0, 0, .1);
            border:  2px solid rgb(0, 0, 0, .1);
            border-radius: 10px;
-           background: #fff;
+           background: #fafafa;
           
           
-    }
-
-    .contact .row .image{
-        flex: 1 1 500px;
-        border: 4px solid rgb(0, 0, 0, .1);
-        box-shadow: 0 0.5rem 1.5rem rgb(0, 0, 0, .1);
-        border-radius: 5px;
-        overflow: hidden;
-
-
-    }
-
-    .contact .row .image img{
-        width: 100%;
-        height: 40rem;
-        
     }
 
     .contact .row form .box{
@@ -579,6 +582,39 @@ header .fa-bars{
 
  
 /*media queries*/
+@media (max-width: 1120px) {
+    html{
+        font-size: 60%;
+    }
+    header{
+        padding: 3rem;
+    }
+    section{
+        padding: 3rem;
+    }
+    .home{
+         background-position: center;
+    }
+
+    .about{
+       flex-direction: column;
+       gap: 1.0rem;
+    }
+    .about .evolve {
+        width: 25%;
+        text-align: center;
+        height: 100%;
+
+}
+     .about .forge {
+        width: 25%;
+        text-align: center;
+} 
+    .about .unravel{
+            width: 25%;
+            text-align: center;
+    }
+}
 @media (max-width: 991px){
     html{
         font-size: 55%;
@@ -687,20 +723,46 @@ header .fa-bars{
     html{
         font-size: 50%;
     }
+    .home{
+        width: 125%;
+    }
+    .about h1{
+        text-align: center;
+        margin-left: 80px;
+    }
     .about .evolve {
         width: 100%;
+        text-align: center;
+        margin-left: 40px;
 }
      .about .forge {
-        width: 100%;
+        display: none;
 } 
     .about .unravel{
-            width: 100%;
+           display: none;
+    }
+
+    .comments{
+        width: 100%;
+        margin-left: 40px;
+    }
+    
+    .projects h1{
+        text-align: center;
+        margin-left: 45px;
+        font-size: 25px;
+    }
+
+    .contact{
+         width: 100%;
+         margin-left: 30px;
     }
     
     .footer .credit{
-        margin-left: 10%;
+        margin-left: 55px;
        }
 }
+
 
 
 
