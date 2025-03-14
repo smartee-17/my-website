@@ -744,9 +744,11 @@ header .fa-bars{
 
     .comments{
         width: 100%;
-        margin-left: 40px;
     }
-    
+    .projects{
+        justify-content: center;
+        align-items: center;
+    }
     .projects h1{
         text-align: center;
         margin-left: 45px;
