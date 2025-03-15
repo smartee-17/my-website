@@ -362,7 +362,7 @@ header .fa-bars{
  }
 
  .comments .box-container{
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
  }
@@ -381,13 +381,14 @@ header .fa-bars{
 }
 
 .comments .box-container .box{
-    padding: 3rem 3rem;
-    box-shadow: 0 0.5rem 1.5rem rgb(0, 0, 0, .1);
-    border-radius: 10px;
-    border: 3px solid rgb(0, 0, 0, .1);
-    position: relative;
-    margin-top: 10px;
-    flex: 1 1 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0px 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0px ;
+   
 }
 
 .comments .box-container .box .user{
@@ -415,15 +416,6 @@ header .fa-bars{
         color: #999;
     }
 
-
- .comments .box-container .box .fa-quote-right{
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    font-size: 6rem;
-    color: #eee;
-    z-index: 1;
- }
 
  .comments .box-container .box .stars i{
     color: var(--red);
@@ -693,11 +685,17 @@ header .fa-bars{
         font-size: 25px;
         margin-bottom: 10px;
     }
-     .comments{
-        width: 100%;
-        margin-left: 30px;
-   }
+    .comments .box-container{
+        display: block;
+        flex-direction: column;
+        align-items: center ;
+    }
 
+    .comments .box-container .box{
+        width: 90%;
+        min-height:  auto;
+        padding: 15px;
+    }
     .contact{
          width: 100%;
          margin-left: 30px;
