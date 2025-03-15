@@ -695,6 +695,12 @@ header .fa-bars{
         width: 90%;
         min-height:  auto;
         padding: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .comments .box-container .box h1{
+        margin-bottom: 20px;
     }
     .contact{
          width: 100%;
