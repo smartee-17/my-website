@@ -582,66 +582,6 @@ header .fa-bars{
 
  
 /*media queries*/
-@media (max-width: 1120px) {
-    html{
-        font-size: 60%;
-    }
-    header{
-        padding: 3rem;
-    }
-    section{
-        padding: 3rem;
-    }
-    .home{
-         background-position: center;
-    }
-
-    .about{
-       flex-direction: column;
-       gap: 1.0rem;
-    }
-    .about .evolve {
-        width: 25%;
-        text-align: center;
-        height: 100%;
-
-}
-     .about .forge {
-        width: 25%;
-        text-align: center;
-} 
-    .about .unravel{
-            width: 25%;
-            text-align: center;
-    }
-}
-@media (max-width: 991px){
-    html{
-        font-size: 55%;
-    }
-    header{
-        padding: 2rem;
-    }
-    section{
-        padding: 2rem;
-    }
-    .home{
-         background-position: left;
-    }
-
-    .about{
-       flex-direction: column;
-    }
-    .about .evolve {
-        width: 80%;
-}
-     .about .forge {
-        width: 80%;
-} 
-    .about .unravel{
-            width: 80%;
-    }
-}
 
 @media (max-width: 768px){
          html .fa-bars{
@@ -683,7 +623,7 @@ header .fa-bars{
         }
 
         .home .content{
-           backdrop-filter: blur(3px);
+           backdrop-filter: blur(2px);
             padding: 10px;
             border-radius: 5px;
             font-size: 24px;
@@ -742,18 +682,21 @@ header .fa-bars{
            display: none;
     }
 
-    .comments{
-        width: 100%;
-    }
     .projects{
-        justify-content: center;
-        align-items: center;
-    }
+        width: 100%;
+        margin-left: 30px;
+   }
+    
     .projects h1{
         text-align: center;
-        margin-left: 45px;
+        margin-left: 55px;
         font-size: 25px;
+        margin-bottom: 10px;
     }
+     .comments{
+        width: 100%;
+        margin-left: 30px;
+   }
 
     .contact{
          width: 100%;
